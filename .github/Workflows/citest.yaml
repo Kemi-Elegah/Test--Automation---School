@@ -3,7 +3,7 @@ name: GitHub Actions Demo
 on: [push]
 jobs:
     Test:
-      runs-on: ubuntu-latest
+      runs-on: windows-latest
       steps:
        - uses: actions/checkout@v2
         - run: echo "The job was automatically triggered by a ${{ gitbuh.event_name}} event."
