@@ -1,8 +1,10 @@
 
 name: GitHub Actions Demo
 on: [push]
+      branches: 
+       - dev
 jobs:
-    Test:
+    builds:
       runs-on: windows-latest
       steps:
        - uses: actions/checkout@v2
