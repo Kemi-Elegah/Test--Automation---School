@@ -1,6 +1,7 @@
 
 import main
 import unittest
+from main import addition
 
 class TestMain(unittest.TestCase):
     
