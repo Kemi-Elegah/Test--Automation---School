@@ -1,0 +1,13 @@
+
+name: Merge CI
+on: [ pull-request ]
+jobs:
+ Tests:
+  runs-on: $ {{ matrix.os }}
+  strategy:
+
+  ubuntu-latest
+  steps:
+   - uses: actions/checkout@v2
+   - run: echo "The job was automatically triggered by a ${{ github.event-name }} event."
+   - run: python main.py
